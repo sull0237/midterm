@@ -3,78 +3,167 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/min/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
   </head>
   <body>
-    <nav>
-      <ul> <li><a href="#home">Home</a></li> </ul>
-      <ul><li><a href="#about">About</a></li> </ul>
-      <ul> <li><a href="#work">Work</a></li>
-      </ul>
-      <ul> <li><a href="#booking">Booking</a></li></ul>
-      <ul><li><a href="#contact"></a>Contact</li></ul>
-    </nav>
-   </div>
+    <div>
     <!--  PAGE 1: HOME-->
-    <div id="page1">
-   <a href="home" class="smooth"></a>
-     <h1>PUN LAY</h1>
-     <div class="home-page">
-       <img src="photo1" src= alt="">
-     </div>
+    <div id="page1" style= "background-image: url(../images/photo1.jpg)">
 
+    <!-- <img src="/midterm/images/photo1.jpg" alt=""> -->
+   <a id="home" class="smooth"></a>
+
+<div class="whole-nav">
+     <img class="logo"src="images/logo-01.png" alt="">
+     <nav >
+       <ul> <li><a href="#home">Home</a></li>
+       <li><a href="#about">About</a></li>
+       <li><a href="#work">Work</a></li>
+       <li><a href="#booking">Booking</a></li>
+       <li><a href="#contact">Contact </a></li>
+     </ul>
+     </nav>
+     </div>
+ </div>
 <!--  PAGE 2: ABOUT-->
-     <div id="page2">
-         <a href="about" class="smooth"></a>
+     <div id="page2" style="background-image: url(../images/photo2.png)">
+         <a id="about" class="smooth"></a>
            <div id="about-page">
-             <img src="photo2" src= alt="">
            </div>
 
-           <h1>About</h1>
-           <h2>Alonso Pun Lay</h2>
-           <p>ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi eius culpa beatae modi natus error possimus dolorem esse. Necessitatibus maiores nemo minus! Inventore explicabo adipisci molestiae nostrum hic delectus?ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi eius culpa beatae modi natus error possimus dolorem esse. Necessitatibus maiores nemo minus! Inventore explicabo adipisci molestiae nostrum hic delectus?ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi eius culpa beatae modi natus error possimus dolorem esse. Necessitatibus maiores nemo minus! Inventore explicabo adipisci molestiae nostrum hic delectus?</p>
+
+        <div class="about-alonso">
+          <h1>About</h1>
+          <h2>Alonso Pun Lay</h2>
+         <p>ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi eius culpa beatae modi natus error possimus dolorem esse. Necessitatibus maiores nemo minus! Inventore explicabo adipisci molestiae nostrum hic delectus?ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi eius culpa beatae modi natus error possimus dolorem esse. Necessitatibus maiores nemo minus! Inventore explicabo adipisci molestiae nostrum hic delectus?ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi eius culpa beatae modi natus error possimus dolorem esse. Necessitatibus maiores nemo minus! Inventore explicabo adipisci molestiae nostrum hic delectus?</p>
+           </div>
          </div>
 <!--  PAGE 3: WORK-->
          <div id="page3">
-           <a href="work" class="smooth"></a>
-           <div class="work-page">
+           <a id="work" class="smooth"></a>
+           <h1>WORK</h1>
+           <!-- <div class="work-page">
              <img src="photo3" src= alt="">
+           </div> -->
+           <!-- Slideshow container -->
+           <div class="slideshow-container">
+
+             <!-- Full-width images with number and caption text -->
+             <div class="mySlides fade">
+               <div class="numbertext">1 / 5</div>
+               <img src="../images/gallery1.jpg" style="width:100%">
+               <div class="text">Caption Text</div>
+             </div>
+
+             <div class="mySlides fade">
+               <div class="numbertext">2 / 5</div>
+               <img src="../images/gallery2.jpg" style="width:100%">
+               <div class="text">Caption Two</div>
+             </div>
+
+             <div class="mySlides fade">
+               <div class="numbertext">3 / 5</div>
+               <img src="../images/gallery3.jpg" style="width:100%">
+               <div class="text">Caption Three</div>
+             </div>
+             <div class="mySlides fade">
+               <div class="numbertext">4 / 5</div>
+               <img src="../images/gallery4.jpg" style="width:100%">
+               <div class="text">Caption Four</div>
+
+             </div> <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="../images/gallery5.jpg" style="width:100%">
+                <div class="text">Caption Five</div>
+              </div>
+             <!-- Next and previous buttons -->
+             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+             <a class="next" onclick="plusSlides(1)">&#10095;</a>
+           </div>
+           <br>
+
+           <!-- The dots/circles -->
+           <div style="text-align:center">
+             <span class="dot" onclick="currentSlide(1)"></span>
+             <span class="dot" onclick="currentSlide(2)"></span>
+             <span class="dot" onclick="currentSlide(3)"></span>
+             <span class="dot" onclick="currentSlide(4)"></span>
+             <span class="dot" onclick="currentSlide(5)"></span>
            </div>
 
-   <!-- photo SLIDER code -->
          </div>
 
-         <!--PAGE 6: BOOKING  -->
+         <!--PAGE 4: BOOKING  -->
          <div id="page4">
-               <a href="booking" class="smooth"></a>
+             <div id="page1" style= "background-image: url(../images/photo4.jpg)">
+               <a id="booking" class="smooth"></a>
+               <!-- <img src="../images/photo4.jpg" alt=""> -->
+<div class="booking">
                  <h1>Booking</h1>
-                 <div class="booking-page">
-                   <img src="photo4" src= alt="">
-                 </div>
 
                  <p> ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi eius culpa beatae modi natus error possimus dolorem esse. Necessitatibus maiores nemo minus! Inventore explicabo adipisci molestiae nostrum hic delectus?
                  </p>
+   </div>
+                 </div>
+
+
                </div>
    <!-- PAGE 5: CONTACT -->
    <div id="page5">
-           <a href="contact" class="smooth"></a>
+           <a id="contact" class="smooth"></a>
              <h1>Contact</h1>
              <div class="contact-page">
                <img src="photo5" src= alt="">
              </div>
              <form action=""></form>
            </div>
+             </div>
+
+             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+             <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+             <script>
+             $('.smooth').on('click', function() {
+                 $.smoothScroll({
+                     scrollElement: $('body'),
+                     scrollTarget: '#' + this.id
+                 });
+
+                 return false;
+             });
+             </script>
+
+             <script>
+             var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+             </script>
   </body>
 </html>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
-<script>
-$('.smooth').on('click', function() {
-    $.smoothScroll({
-        scrollElement: $('body'),
-        scrollTarget: '#' + this.id
-    });
-
-    return false;
-});
-</script>
