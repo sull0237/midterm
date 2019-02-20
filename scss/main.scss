@@ -1,15 +1,15 @@
 @import "variables";
-* {box-sizing:border-box}
+* {box-sizing: border-box;
+// body {
+//   width: 100%;
+}
 #page1, #page2, #page3, #page4, #page5 {
-height: 850px;
+// height: 850px;
+height: 1000px;
 background-repeat: no-repeat;
 background-size: contain;
 background-position: top center;
-  background-image: url("photo1.jpg");
-
-}
-#page3{
-
+  // background-image: url("photo1.jpg");
 }
 img {
   width: 100%;
@@ -22,7 +22,7 @@ img {
 .logo{
 width: 100px;
 position: fixed;
-left: 70px;
+left: 68px;
 top: 176px;
 }
 nav {
@@ -44,12 +44,13 @@ ul {
   a {
     color: black;
     font-family: $nav-font;
+    font-size: 10px;
   }
 }
 .about-alonso {
     color: white;
     position: absolute;
-    margin-top: -5%;
+    margin-top: 8%;
     margin-right: 2%;
     margin-left: 2%;
     position: absolute;
@@ -61,8 +62,6 @@ ul {
   p{
     font-size: 12px;
   }
-
-
 }
 
 /* Slideshow container */
@@ -157,7 +156,15 @@ ul {
   from {opacity: .4}
   to {opacity: 1}
 }
-
+// WORK
+#page3{
+  h1{
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    margin-left: 1%;
+  }
+}
 .booking {
   h1{
   font-size: 200px;
@@ -173,3 +180,88 @@ p{
   margin-right: 58%;
 }
 }
+#page5 {
+  h1 {
+    font-size: 100px;
+    color: white;
+    position: absolute;
+    margin-top: 12%;
+    margin-left: 15%;
+  }
+}
+form {
+padding: 50px;
+width: 50%;
+  background-color: white;
+  opacity: 0.7;
+  position: absolute;
+  margin-top: 22%;
+  margin-left: 15%;
+    label {
+      display: block;
+    }
+     input[type="text"] {
+        border-radius: 3px;
+        border: 1px solid #3b0054;
+        padding: 5px 5px;
+        width:100%;
+    }
+    textarea {
+        width: 100%;
+        max-width: 100%;
+        border: 1px solid #3b0054;
+          border-radius: 3px;
+    }
+    input[type="submit"] {
+        border: 1px solid #3b0054;
+        font-size: 1rem;
+
+        cursor: pointer;
+        border-radius: 3px;
+        text-transform: uppercase;
+        padding: 10px 138px;
+        margin-left: 25%;
+    }
+  }
+
+
+// label {
+//     color: #3b0054;
+//     padding: 1rem 0;
+//     display: block;
+//     border: none;
+// }
+// fieldset {
+//     display: block;
+//     text-align: center;
+//     border: none;
+//     margin: 0;
+// }
+// input[type="text"] {
+//     border-radius: 3px;
+//     border: 1px solid #3b0054;
+//     padding: 5px 5px;
+//     width:100%;
+// }
+// textarea {
+//     width: 100%;
+//     max-width: 100%;
+// }
+// input[type="submit"] {
+//     border: 1px solid #3b0054;
+//     font-family: Century Gothic;
+//     font-size: 1rem;
+//     color: #d499ed;
+//     background: #3b0054;
+//     cursor: pointer;
+//     border-radius: 3px;
+//     text-transform: uppercase;
+//     padding: 10px 138px;
+//     margin-left: 10px;
+// }
+//
+// input[type="submit"]:hover {
+//     background: #d499ed;
+//     color: #3b0054;
+// }
+// }

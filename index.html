@@ -33,8 +33,6 @@
          <a id="about" class="smooth"></a>
            <div id="about-page">
            </div>
-
-
         <div class="about-alonso">
           <h1>About</h1>
           <h2>Alonso Pun Lay</h2>
@@ -42,9 +40,9 @@
            </div>
          </div>
 <!--  PAGE 3: WORK-->
-         <div id="page3">
+         <div id="page3"style= "background-image: url(../images/mauve-01.jpg)">
            <a id="work" class="smooth"></a>
-           <h1>WORK</h1>
+           <h1>Work</h1>
            <!-- <div class="work-page">
              <img src="photo3" src= alt="">
            </div> -->
@@ -84,7 +82,6 @@
              <a class="next" onclick="plusSlides(1)">&#10095;</a>
            </div>
            <br>
-
            <!-- The dots/circles -->
            <div style="text-align:center">
              <span class="dot" onclick="currentSlide(1)"></span>
@@ -112,15 +109,32 @@
 
                </div>
    <!-- PAGE 5: CONTACT -->
-   <div id="page5">
+   <div id="page5" style= "background-image: url(../images/contact.jpg)">
            <a id="contact" class="smooth"></a>
              <h1>Contact</h1>
-             <div class="contact-page">
-               <img src="photo5" src= alt="">
-             </div>
-             <form action=""></form>
-           </div>
-             </div>
+             <!-- <div class="contact-page"> -->
+             <!-- <h2>Get in Touch</h2> -->
+<div class="contactform">
+                   <form>
+                       <fieldset>
+                           <label for="name">Name</label>
+                           <input type="text" name="name" placeholder="Jane Doe">
+                       </fieldset>
+                       <fieldset>
+                           <label for="email">Email</label>
+                           <input type="text" name="email" placeholder="janedoe@xyz.com">
+                       </fieldset>
+                       <fieldset>
+                           <label for="message">Message</label>
+                           <textarea name="message" placeholder="Hello..."></textarea>
+                       </fieldset>
+                       <input type="submit" value="Submit">
+                   </form>
+                   </div>
+               </div>
+
+
+
 
              <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
              <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
@@ -165,5 +179,21 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
              </script>
+             <!-- <script>
+             var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";
+}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}
+slides[slideIndex-1].style.display = "block";
+setTimeout(showSlides, 3000); // Change image every 2 seconds
+} -->
+             <!-- </script> -->
   </body>
 </html>
