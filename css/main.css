@@ -2,118 +2,35 @@
   box-sizing: border-box; }
 
 #page1, #page2, #page3, #page4, #page5 {
-  height: 1000px;
+  width: 100%;
+  height: 700px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center; }
 
-.whole-nav {
-  position: fixed; }
+.navigation {
+  display: none; }
 
-nav {
-  position: fixed;
-  margin-top: 278px;
+.navbar {
   background-color: #D8A871;
-  width: 150px;
-  height: 338px;
-  padding-top: 100px;
-  padding-right: 10px; }
-  nav ul {
-    padding-top: 40px; }
-  nav li {
-    list-style: none;
-    padding-bottom: 5px; }
-  nav a {
-    color: black;
-    font-family: "Lato", sans-serif;
-    font-size: 10px; }
+  opacity: 0.8; }
+
+.navbar-collapse {
+  margin: auto 0;
+  padding-bottom: 40px;
+  padding-top: 20px; }
+
+.nav-item {
+  text-align: center; }
 
 .logo img {
-  width: 100px; }
+  width: 20%;
+  margin-left: 160px; }
 
-.about-alonso {
-  color: white;
-  position: absolute;
-  margin-top: 8%;
-  margin-right: 2%;
-  margin-left: 2%;
-  position: absolute;
-  top: 1110px;
-  right: 80px;
-  left: 800px; }
-  .about-alonso h1 {
-    font-size: 40px; }
-  .about-alonso h2 {
-    font-size: 60px; }
-  .about-alonso p {
-    font-size: 12px; }
+h1 {
+  padding-left: 20px; }
 
-/* Slideshow container */
-.slider {
-  width: 65%;
-  position: absolute;
-  left: 20%;
-  padding-top: 20%; }
-
-#page3 h1 {
-  font-size: 80px;
-  color: white;
-  position: absolute;
-  margin-left: 12%;
-  padding-top: 10%; }
-
-.booking h1 {
-  font-size: 200px;
-  color: white;
-  position: absolute;
-  margin-left: 10%;
-  margin-top: 2%; }
-
-.booking p {
-  position: absolute;
-  margin-top: 30%;
-  margin-left: 15%;
-  margin-right: 58%; }
-
-#page5 h1 {
-  font-size: 100px;
-  color: white;
-  position: absolute;
-  margin-top: 12%;
-  margin-left: 15%; }
-
-.contactform {
-  width: 50%;
-  position: absolute;
-  margin-left: 25%; }
-  .contactform form {
-    background-color: white;
-    opacity: 0.7; }
-  .contactform label {
-    color: black;
-    padding: 1rem 0;
-    display: block;
-    border: none; }
-  .contactform fieldset {
-    display: block;
-    text-align: center;
-    border: none;
-    margin: 0; }
-  .contactform input[type="text"] {
-    border-radius: 3px;
-    border: 1px solid #3b0054;
-    padding: 5px 5px;
-    width: 50%; }
-  .contactform textarea {
-    width: 100%;
-    max-width: 100%; }
-  .contactform input[type="submit"] {
-    border: 1px solid #3b0054;
-    font-family: Century Gothic;
-    font-size: 1rem;
-    color: black;
-    cursor: pointer;
-    border-radius: 3px;
-    text-transform: uppercase;
-    padding: 10px 138px;
-    margin-left: 10px; }
+h2 {
+  padding-left: 20px; }
+  h2 #page2 p {
+    padding-left: 80px; }
