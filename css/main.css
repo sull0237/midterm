@@ -6,14 +6,13 @@
   height: 700px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center; }
+  background-position: center; }
 
 .navigation {
   display: none; }
 
-.navbar {
-  background-color: #D8A871;
-  opacity: 0.8; }
+.navbar .navbar-toggler-icon {
+  border: none; }
 
 .navbar-collapse {
   margin: auto 0;
@@ -22,6 +21,11 @@
 
 .nav-item {
   text-align: center; }
+  .nav-item .nav-link {
+    background-color: #D8A871;
+    opacity: 0.8; }
+    .nav-item .nav-link:hover {
+      opacity: 1; }
 
 .logo img {
   width: 20%;
@@ -61,30 +65,34 @@ h2 {
   #page2 .about-alonso .about-paragraph .p1 {
     padding-top: 150px; }
 
-#page2 #page3 {
-  height: 300px; }
+#page3 {
+  height: 400px;
+  overflow: hidden; }
+  #page3 .alonso-work h1 {
+    font-size: 60px;
+    padding-top: 0px;
+    padding-left: 40px;
+    padding-bottom: 0px; }
+  #page3 .alonso-work .slider .carousel-item {
+    height: 250px; }
+    #page3 .alonso-work .slider .carousel-item img {
+      width: 100%; }
 
-#page2 .alonso-work h1 {
-  font-size: 60px;
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-bottom: 40px; }
-
-#page2 #page4 h1 {
+#page4 h1 {
   font-size: 60px; }
 
-#page2 #page4 p {
+#page4 p {
   font-size: 12px;
   padding-top: 4px;
   padding-left: 50px;
   padding-right: 40px;
   text-align: justify; }
 
-#page2 #page5 h1 {
+#page5 h1 {
   padding-top: 50px;
   font-size: 60px; }
 
-#page2 #page5 .contact .contactform fieldset {
+#page5 .contact .contactform fieldset {
   background-color: white;
   padding: 5px;
   margin: 20px;
@@ -92,13 +100,92 @@ h2 {
   border: 1px solid grey;
   border-radius: 5px; }
 
-#page2 #page5 .contact .contactform label {
+#page5 .contact .contactform label {
   padding-left: 8px;
   background-color: white; }
 
-#page2 #page5 .contact .contactform textarea {
+#page5 .contact .contactform textarea {
   width: 200px; }
 
-#page2 #page5 .contact .contactform input {
+#page5 .contact .contactform input {
   padding-left: 5px;
   border: none; }
+
+#page5 .contact input[type="submit"] {
+  padding-left: 5px;
+  border: none;
+  width: 100px;
+  margin: 20px;
+  border-radius: 3px;
+  opacity: 0.6;
+  background-color: white; }
+
+@media all and (min-width: 950px) {
+  #page1, #page2, #page3, #page4, #page5 {
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center; }
+  .navbar {
+    display: none; }
+  .navigation {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    margin-top: 278px;
+    background-color: #D8A871;
+    width: 150px;
+    height: 338px;
+    padding-top: 100px;
+    padding-right: 10px; }
+    .navigation ul {
+      padding-top: 40px; }
+    .navigation li {
+      list-style: none;
+      padding-bottom: 5px; }
+    .navigation a {
+      color: black;
+      font-family: "Lato", sans-serif;
+      font-size: 10px; }
+  .logo img {
+    width: 100px; }
+  #page3 {
+    overflow: hidden;
+    height: 750px; }
+    #page3 .alonso-work .slider .carousel {
+      width: 75%;
+      margin: 0 auto; }
+      #page3 .alonso-work .slider .carousel .carousel-item {
+        width: 100%;
+        height: 600px; }
+        #page3 .alonso-work .slider .carousel .carousel-item img {
+          width: 100%; }
+  .logo {
+    position: absolute;
+    padding-top: 300px;
+    padding-left: 500px; }
+  #page2 .about-alonso {
+    color: white;
+    position: absolute;
+    margin-top: 8%;
+    margin-right: 2%;
+    margin-left: 2%;
+    position: absolute;
+    top: 1110px;
+    right: 80px;
+    left: 800px; }
+  #page2 h1 {
+    font-size: 60px;
+    position: absolute;
+    top: 1110px;
+    right: 80px;
+    left: 800px; }
+  #page2 h2 {
+    font-size: 80px !important;
+    position: absolute;
+    top: 1210px;
+    right: 80px;
+    left: 800px; }
+  #page2 p {
+    font-size: 16px; } }

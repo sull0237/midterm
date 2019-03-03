@@ -5,14 +5,18 @@ width: 100%;
 height: 700px;
 background-repeat: no-repeat;
 background-size: cover;
-background-position: top center;
+background-position: center;
+// background-attachment: fixed;
 }
 .navigation{
   display: none;
 }
  .navbar{
-   background-color: $sand;
-   opacity: 0.8;
+   // background-color: $sand;
+   // opacity: 0.8;
+   .navbar-toggler-icon {
+     border: none;
+   }
  }
 .navbar-collapse{
    margin:auto 0;
@@ -21,6 +25,13 @@ padding-top: 20px;
 }
 .nav-item{
   text-align: center;
+  .nav-link {
+    background-color: $sand;
+    opacity: 0.8;
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 .logo img {
   width: 20%;
@@ -58,17 +69,27 @@ padding-left: 40px;}
       padding-top: 150px;}
   }
 }
+}
 
 #page3{
-height: 300px;
-}
+height: 400px;
+overflow: hidden;
 .alonso-work{
   h1{
     font-size: 60px;
-    padding-top: 40px;
+    padding-top: 0px;
     padding-left: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
   }
+  .slider {
+    .carousel-item {
+      height: 250px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
 }
 #page4{
   h1{font-size: 60px;}
@@ -78,6 +99,7 @@ padding-left: 50px;
 padding-right: 40px;
 text-align: justify;}
 }
+
 #page5{
   h1{ padding-top: 50px;
   font-size: 60px;}
@@ -101,66 +123,119 @@ text-align: justify;}
   padding-left: 5px;
   border: none;}
   }
+  input[type="submit"] {
+    padding-left: 5px;
+    border: none;
+    width: 100px;
+    margin: 20px;
+    border-radius: 3px;
+    opacity: 0.6;
+    background-color: white;
+  }
 
-}}}
+}}
 
 
 
 // @media all and (min-width: 650px){
 //
 // }
-// @media all and (min-width: 950px){
-// #page1, #page2, #page3, #page4, #page5 {
-// // height: 850px;
-// height: 1000px;
-// background-repeat: no-repeat;
-// background-size: cover;
-// background-position: top center;
-// }
-//
-// // .whole-nav {
-// //   position: fixed;
-// // }
-// // nav {
-// // position: fixed;
-// // margin-top: 278px;
-// // background-color: $sand;
-// // width: 150px;
-// // height: 338px;
-// // padding-top: 100px;
-// // padding-right: 10px;
-// // ul {
-// //   padding-top: 40px;
-// // }
-// //    li {
-// //     list-style: none;
-// //     padding-bottom: 5px;
-// //   }
-// //   a {
-// //     color: black;
-// //     font-family: $nav-font;
-// //     font-size: 10px;
-// //   }
-// // }
-// .logo img {
-//   width: 100px;
-// }
-// .about-alonso {
-//     color: white;
-//     position: absolute;
-//     margin-top: 8%;
-//     margin-right: 2%;
-//     margin-left: 2%;
-//     position: absolute;
-//     top: 1110px;
-//     right: 80px;
-//     left: 800px;
-//   h1{ font-size: 40px;}
-//   h2 {font-size: 60px;}
-//   p{
-//     font-size: 12px;
-//   }
-// }
+@media all and (min-width: 950px){
+#page1, #page2, #page3, #page4, #page5 {
+// height: 850px;
+height: 1000px;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: top center;
+}
+
+.navbar {
+  display: none;
+}
+
+.navigation {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  margin-top: 278px;
+  background-color: $sand;
+  width: 150px;
+  height: 338px;
+  padding-top: 100px;
+  padding-right: 10px;
+  ul {
+    padding-top: 40px;
+  }
+     li {
+      list-style: none;
+      padding-bottom: 5px;
+    }
+    a {
+      color: black;
+      font-family: $nav-font;
+      font-size: 10px;
+    }
+  }
+  .logo img {
+    width: 100px;
+  }
+  #page3{
+    overflow: hidden;
+    height: 750px;
+    .alonso-work{
+      .slider{
+        .carousel {
+          width: 75%;
+          margin: 0 auto;
+          .carousel-item{
+            width: 100%;
+            height: 600px;
+            img{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+.logo{
+  position: absolute;
+  padding-top: 300px;
+padding-left:500px; }
+
+#page2{
+  .about-alonso {
+    color: white;
+    position: absolute;
+    margin-top: 8%;
+    margin-right: 2%;
+    margin-left: 2%;
+    position: absolute;
+    top: 1110px;
+    right: 80px;
+    left: 800px;
+}
+h1{ font-size: 60px;
+  position: absolute;
+  top: 1110px;
+  right: 80px;
+  left: 800px;}
+h2 {font-size: 80px !important;
+  position: absolute;
+  top: 1210px;
+  right: 80px;
+  left: 800px;}
+p{
+  font-size: 16px;
+}
+}
+
+}
+
+
 //
 // /* Slideshow container */
 // .slider {
@@ -239,16 +314,15 @@ text-align: justify;}
 //     font-family: Century Gothic;
 //     font-size: 1rem;
 //     color: black;
-//     // background: #3b0054;
+//     background: #3b0054;
 //     cursor: pointer;
 //     border-radius: 3px;
 //     text-transform: uppercase;
 //     padding: 10px 138px;
 //     margin-left: 10px;
 // }
-//
 // input[type="submit"]:hover {
-//     // background: #d499ed;
-//     // color: #3b0054;
+//     background: #d499ed;
+//     color: #3b0054;
 // }
 // }
