@@ -84,7 +84,7 @@ h2 {
   padding-top: 50px;
   font-size: 60px; }
 
-#page2 #page5 .contactform fieldset {
+#page2 #page5 .contact .contactform fieldset {
   background-color: white;
   padding: 5px;
   margin: 20px;
@@ -92,13 +92,13 @@ h2 {
   border: 1px solid grey;
   border-radius: 5px; }
 
-#page2 #page5 .contactform label {
+#page2 #page5 .contact .contactform label {
   padding-left: 8px;
   background-color: white; }
 
-#page2 #page5 .contactform textarea {
+#page2 #page5 .contact .contactform textarea {
   width: 200px; }
 
-#page2 #page5 .contactform input {
+#page2 #page5 .contact .contactform input {
   padding-left: 5px;
   border: none; }

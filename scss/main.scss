@@ -78,28 +78,30 @@ padding-left: 50px;
 padding-right: 40px;
 text-align: justify;}
 }
-
 #page5{
   h1{ padding-top: 50px;
   font-size: 60px;}
-  .contactform{
-fieldset {
-  background-color: white;
-  padding: 5px;
-  margin: 20px;
-opacity: 0.6;
-border: 1px solid grey;
-border-radius: 5px;}
-label{
-  padding-left: 8px;
-  background-color: white;
-}
-textarea{
-width: 200px;
-}
-input{
-padding-left: 5px;
-border: none;}
+  .contact{
+    .contactform{
+  fieldset {
+    background-color: white;
+    padding: 5px;
+    margin: 20px;
+  opacity: 0.6;
+  border: 1px solid grey;
+  border-radius: 5px;}
+  label{
+    padding-left: 8px;
+    background-color: white;
+  }
+  textarea{
+  width: 200px;
+  }
+  input{
+  padding-left: 5px;
+  border: none;}
+  }
+
 }}}
 
 
