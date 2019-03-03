@@ -26,18 +26,87 @@ padding-top: 20px;
   width: 20%;
 margin-left: 160px;
 }
-// h1{padding-left: 20px;}
-// h2 {padding-left: 20px;}
-  #page2 .about-alonso {
- padding-left: 80px;
+h1, h2{
+  color: #F0EFED;
+}
+h1{font-family: $nav-font;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+h2{font-family: $h1-font;
+padding-left: 40px;}
+#page2{
+
+  .about-alonso {
+  h1{
+    font-size: 60px;
+    padding-top: 25px;
+    padding-left: 40px;}
+    h2{padding-left: 40px;
+    font-size: 40px;}
+  .about-paragraph{
+    opacity: 0.65;
+    height: 578px;
+    // background-color: #878289;}
+    p{
+        font-size: 12px;
+      color:  #F0EFED}
+    .p1,.p2{
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;}
+    .p1{
+      padding-top: 150px;}
+  }
+}
+
+#page3{
+height: 300px;
+}
+.alonso-work{
+  h1{
+    font-size: 60px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+  }
+}
+#page4{
+  h1{font-size: 60px;}
+  p{ font-size: 12px;
+    padding-top: 4px;
+  padding-left: 50px;
+padding-right: 40px;
+text-align: justify;}
+}
+
+#page5{
+  h1{ padding-top: 50px;
+  font-size: 60px;}
+  .contactform{
+  padding-top: 30px;}
+fieldset{ background-color: white;
+  padding: 5px;
+  margin: 20px;
+opacity: 0.6;
+border: 1px solid grey;
+border-radius: 5px;}
+}
+label{padding-left: 8px;
+}
+textarea{
+width: 200px;
+}
+input{padding-left: 5px;
+border: none;
+}
 }
 
 
-}
 
-@media all and (min-width: 650px){
-
-}
+// @media all and (min-width: 650px){
+//
+// }
 // @media all and (min-width: 950px){
 // #page1, #page2, #page3, #page4, #page5 {
 // // height: 850px;
