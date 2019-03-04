@@ -34,6 +34,7 @@ padding-top: 20px;
   }
 }
 .logo img {
+  padding-top: 200px;
   width: 20%;
 margin-left: 160px;
 }
@@ -71,7 +72,6 @@ font-size: 40px;}
   }
 }
 }
-
 #page3{
 height: 500px;
 overflow: hidden;
@@ -102,7 +102,6 @@ padding-left: 50px;
 padding-right: 40px;
 text-align: justify;}
 }
-
 #page5{
   h1{ padding-top: 50px;
   font-size: 60px;}
@@ -140,21 +139,45 @@ text-align: justify;}
    padding-top: 50px;
   width: 20%;
 margin-left: 160px;}
-
 }}
-
-
-
+// TABLET VIEW
 @media all and (min-width: 650px){
 #page1, #page2, #page3, #page4, #page5 {
   height: 700px;
-}
 #page1{
   .logo img{
-    padding-top: 170px;
-    padding-left: 120px;
-    width: 200px;
+    padding-top: 170px !important;
+    margin-left: 45% !important;
+    width: 100px !important;
   }
+}
+#page2{
+  h1{ padding-left: 478px;
+  padding-top: 150px !important;}
+  h2{ padding-left: 478px;}
+  .about-alonso{
+    .about-paragraph{
+      .p1, .p2{ padding-left: 478px !important;
+      padding-top: 8px !important;
+  }
+
+  }
+  }
+}
+#page3{
+  .alonso-work{
+    .slider {
+      .carousel-item {
+        padding-top: 40px;
+        height: 700px !important;
+        img {
+          width: 80% !important;
+        }
+  }
+  }
+  }
+
+}
 }
 }
 @media all and (min-width: 950px){

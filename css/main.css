@@ -28,6 +28,7 @@
       opacity: 1; }
 
 .logo img {
+  padding-top: 200px;
   width: 20%;
   margin-left: 160px; }
 
@@ -127,10 +128,23 @@ h2 {
 @media all and (min-width: 650px) {
   #page1, #page2, #page3, #page4, #page5 {
     height: 700px; }
-  #page1 .logo img {
-    padding-top: 170px;
-    padding-left: 120px;
-    width: 200px; } }
+    #page1 #page1 .logo img, #page2 #page1 .logo img, #page3 #page1 .logo img, #page4 #page1 .logo img, #page5 #page1 .logo img {
+      padding-top: 170px !important;
+      margin-left: 45% !important;
+      width: 100px !important; }
+    #page1 #page2 h1, #page2 #page2 h1, #page3 #page2 h1, #page4 #page2 h1, #page5 #page2 h1 {
+      padding-left: 478px;
+      padding-top: 150px !important; }
+    #page1 #page2 h2, #page2 #page2 h2, #page3 #page2 h2, #page4 #page2 h2, #page5 #page2 h2 {
+      padding-left: 478px; }
+    #page1 #page2 .about-alonso .about-paragraph .p1, #page1 #page2 .about-alonso .about-paragraph .p2, #page2 #page2 .about-alonso .about-paragraph .p1, #page2 #page2 .about-alonso .about-paragraph .p2, #page3 #page2 .about-alonso .about-paragraph .p1, #page3 #page2 .about-alonso .about-paragraph .p2, #page4 #page2 .about-alonso .about-paragraph .p1, #page4 #page2 .about-alonso .about-paragraph .p2, #page5 #page2 .about-alonso .about-paragraph .p1, #page5 #page2 .about-alonso .about-paragraph .p2 {
+      padding-left: 478px !important;
+      padding-top: 8px !important; }
+    #page1 #page3 .alonso-work .slider .carousel-item, #page2 #page3 .alonso-work .slider .carousel-item, #page3 #page3 .alonso-work .slider .carousel-item, #page4 #page3 .alonso-work .slider .carousel-item, #page5 #page3 .alonso-work .slider .carousel-item {
+      padding-top: 40px;
+      height: 700px !important; }
+      #page1 #page3 .alonso-work .slider .carousel-item img, #page2 #page3 .alonso-work .slider .carousel-item img, #page3 #page3 .alonso-work .slider .carousel-item img, #page4 #page3 .alonso-work .slider .carousel-item img, #page5 #page3 .alonso-work .slider .carousel-item img {
+        width: 80% !important; } }
 
 @media all and (min-width: 950px) {
   #page1, #page2, #page3, #page4, #page5 {
