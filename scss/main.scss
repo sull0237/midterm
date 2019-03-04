@@ -44,8 +44,9 @@ h1{font-family: $nav-font;
   padding-left: 40px;
   padding-top: 20px;
 }
-h2{font-family: $h1-font;
-padding-left: 40px;}
+h2{
+padding-left: 40px;
+font-size: 40px;}
 #page2{
   .about-alonso {
   h1{
@@ -72,18 +73,19 @@ padding-left: 40px;}
 }
 
 #page3{
-height: 400px;
+height: 500px;
 overflow: hidden;
 .alonso-work{
   h1{
     font-size: 60px;
-    padding-top: 0px;
+    padding-top: 20px;
     padding-left: 40px;
     padding-bottom: 0px;
   }
   .slider {
     .carousel-item {
-      height: 250px;
+      padding-top: 40px;
+      height: 400px;
       img {
         width: 100%;
       }
@@ -92,7 +94,8 @@ overflow: hidden;
 }
 }
 #page4{
-  h1{font-size: 60px;}
+  h1{font-size: 60px;
+  padding-left: 130px !important;}
   p{ font-size: 12px;
   padding-top: 4px;
 padding-left: 50px;
@@ -104,6 +107,7 @@ text-align: justify;}
   h1{ padding-top: 50px;
   font-size: 60px;}
   .contact{
+    padding-top: 30px;
     .contactform{
   fieldset {
     background-color: white;
@@ -117,7 +121,7 @@ text-align: justify;}
     background-color: white;
   }
   textarea{
-  width: 200px;
+  width: 250px;
   }
   input{
   padding-left: 5px;
@@ -126,20 +130,33 @@ text-align: justify;}
   input[type="submit"] {
     padding-left: 5px;
     border: none;
-    width: 100px;
+    width: 350px;
     margin: 20px;
     border-radius: 3px;
     opacity: 0.6;
     background-color: white;
   }
+ .logo-2 img{
+   padding-top: 50px;
+  width: 20%;
+margin-left: 160px;}
 
 }}
 
 
 
-// @media all and (min-width: 650px){
-//
-// }
+@media all and (min-width: 650px){
+#page1, #page2, #page3, #page4, #page5 {
+  height: 700px;
+}
+#page1{
+  .logo img{
+    padding-top: 170px;
+    padding-left: 120px;
+    width: 200px;
+  }
+}
+}
 @media all and (min-width: 950px){
 #page1, #page2, #page3, #page4, #page5 {
 // height: 850px;
@@ -210,41 +227,98 @@ padding-left:500px; }
   .about-alonso {
     color: white;
     position: absolute;
-    margin-top: 8%;
-    margin-right: 2%;
-    margin-left: 2%;
+    margin-top: 6%;
+    margin-right: 1%;
+    margin-left: -1%;
     position: absolute;
     top: 1110px;
-    right: 80px;
+    right: 70px;
     left: 800px;
 }
 h1{ font-size: 60px;
   position: absolute;
-  top: 1110px;
-  right: 80px;
-  left: 800px;}
-h2 {font-size: 80px !important;
+  top: 1140px;
+  right: 50px;
+  left: 772px;}
+h2 {font-size: 65px !important;
   position: absolute;
-  top: 1210px;
+  top: 1240px;
   right: 80px;
-  left: 800px;}
-p{
-  font-size: 16px;
+  left: 772px;}
+ p {
+
+// padding-left: 2px !important;
+font-size: 14px !important;
+}
+.p1{
+  padding-top: 100px;
 }
 }
+#page3{
+  height: 1000px;
+  h1{
+    padding-left: 200px !important;
+    padding-top: 40px !important;
+    font-size: 90px !important;
+  }
+  .slider {
+    width: 85%;
+    position: absolute;
+    left: 185px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  }
+  }
+  #page4{
+    h1{
+      font-size: 200px;
+      padding-left: 540px !important;
+      padding-top: 2px;
+    }
+    p{
+      padding-left: 200px !important;
+      padding-right: 800px;
+      padding-top: 120px;
+      font-size: 14px;
+    }
+  }
+  #page5{
+    h1{
+      font-size: 200px;
+      padding-left: 350px;
+    }
+    .contact{
+      padding-top: 60px;
+      width: 50%;
+      margin: 0 auto;
+    }
+    .contactform{
+      textarea{
+        width: 660px !important;
+      }
+    label{
+      padding-left: 400px ;
+    }
+    input {
+        padding-left: 40px !important;}
+      }
+    }
+    .logo-2 img{
+  width: 180px !important;
+padding-left: 100px !important;}
 
 }
+
+
+
+
+
 
 
 //
 // /* Slideshow container */
-// .slider {
-//   width: 65%;
-//   position: absolute;
-//   left: 20%;
-// padding-top: 20%;
-// }
-//
+
+
 // // WORK
 // #page3{
 //   h1{
